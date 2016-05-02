@@ -71,7 +71,7 @@ public class CollectorApp {
 			try {	
 				obj=impl.getData(arr[i], arr[i+1]);
 				//System.out.println(System.getProperty("user.dir"));
-				File file=new File(System.getProperty("user.dir")+"/src/main/resources/data.json");
+				File file=new File(System.getProperty("user.dir")+"/src/main/resources/data.txt");
 				if (!file.exists()) {
 					file.createNewFile();
 				}
