@@ -11,7 +11,9 @@ import java.io.Reader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
 
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
@@ -25,7 +27,15 @@ public class SourceImpl implements Source<ModelClass>{
 	{
 		System.out.println(d1+"--"+d2+",");
 		JSONObject json=null;
+		Date d=new Date();
+		SimpleDateFormat format=new SimpleDateFormat("yyyy-MM-dd");
+		String last=format.format(d);
 		URL url=new URL("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="+d1+"&endtime="+d2+"&minmagnitude=1&limit=20000");
+		if(last.equals(d2))
+		{
+			System.out.println("last record url");
+			url=new URL("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="+d1+"&endtime="+d2+"&minmagnitude=4&limit=20000");
+		}		
 		System.out.println(url.toString());
 		try {
 		    String text = IOUtils.toString(url);
