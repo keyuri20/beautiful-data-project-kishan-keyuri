@@ -1,26 +1,6 @@
 # Data Science 2016
 
-[![Build Status](https://travis-ci.org/csula/datascience-spring-2016.svg?branch=master)](https://travis-ci.org/csula/datascience-spring-2016)
+This Big-Data project focuses on the earthquake data analysis for a particular region. Based on the data that we have, we tried to narrow down the analysis limited to Los Angeles, California and we conclude that Los Angeles is safer place as compared to other major and nearby parts of California.
 
-Welcome to the Spring 2016 Data Science class!
-
-As a future data analyst, you are responsible to **collect**, **store**, **analyze** and effectively **report** on data insight.
-
-In this class, we will be learning how to clean up messy data, uncover patterns and insights to conclude or to make predictions. Moreover, we will be communicating our findings with beautiful visualization!
-
-You are welcome to join the class [gitter chat room](https://gitter.im/csula/datascience-spring-2016).  In the interest of being efficient, we encourage everyone to ask questions publicly so that common questions can be answered once.
-
-In this quarter, we will publish all course materials on the Github and on [Gitbook][1].  This implies you **do not** need a textbook for the class as all required materials will be provided.
-
-> Please feel free to utilize Github issue or Gitbook comment to share your thoughts on the course throughout the quarter
-
-[![Join the chat at https://gitter.im/csula/datascience-spring-2016](https://badges.gitter.im/csula/datascience-spring-2016.svg)](https://gitter.im/csula/datascience-spring-2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-## Quick links
-
-* [Announcements](announcements.md)
-* [Syllabus](syllabus.md)
-  * [Schedule](syllabus.md#course-schedule)
-* [Gitbook][1]
-
-[1]: https://www.gitbook.com/book/rcliao/datascience-spring-2016/
+Visit the dasboard in order to view our findings:
+[Link to Kibana-Dashboard](https://search-earthquake-qc64kdugu3fhws4potww5q2mbi.us-west-2.es.amazonaws.com/_plugin/kibana/#/dashboard/project-dashboards?_a=(filters:!(),panels:!((col:1,id:Main-Heading,row:1,size_x:12,size_y:2,type:visualization),(col:5,id:California-Introduction,row:3,size_x:8,size_y:2,type:visualization),(col:5,id:California-Earthquake-Stats-with-avg-and-max-magnitude,row:5,size_x:8,size_y:3,type:visualization),(col:1,id:Introduction,row:3,size_x:4,size_y:3,type:visualization),(col:1,id:Los-Angeles-Earthquake-by-depth,row:16,size_x:5,size_y:6,type:visualization),(col:1,id:Los-Angeles-Earthquake-count-over-the-years,row:10,size_x:12,size_y:4,type:visualization),(col:10,id:Los-Angeles-Max-Magnitude,row:8,size_x:3,size_y:2,type:visualization),(col:1,id:Max-mag-and-total-count,row:6,size_x:4,size_y:2,type:visualization),(col:6,id:Pie-Chart-with-LatLong,row:16,size_x:7,size_y:6,type:visualization),(col:1,id:Story-1,row:8,size_x:9,size_y:2,type:visualization),(col:1,id:Story-2,row:14,size_x:12,size_y:2,type:visualization),(col:1,id:Story-3,row:22,size_x:12,size_y:3,type:visualization),(col:7,id:Comparision-w-slash-Borrego-Springs,row:25,size_x:6,size_y:5,type:visualization),(col:1,id:Comparisions-w-slash-o-Borrego-Springs,row:25,size_x:6,size_y:5,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:'project%20dashboards')&_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:'1900-01-01T08:00:00.000Z',mode:absolute,to:'2016-10-12T16:06:55.205Z')))
